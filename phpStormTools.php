@@ -30,7 +30,7 @@ switch ($command) {
         $phpStormTools->packageGIT($homeDir . $data1);
         break;
     case 'copy':
-        $phpStormTools->copy($data1, $data2);
+        $phpStormTools->copy($data1, $data2, $data3);
         break;
     default:
         echo "Command not recognised" . PHP_EOL;
@@ -143,7 +143,6 @@ class phpStormTools
         if ($js === true && $direction === 1) {
             $this->clearJS($destinationServer);
         }
-
     }
 
     /**
